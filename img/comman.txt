@@ -1,0 +1,22 @@
+>>> from dk.models import Article
+
+>>> Article.objects.all()
+<QuerySet []>
+
+>>> article = Article()
+
+>>> article.title = 'Title field'
+
+>>> article.save
+<bound method Model.save of <Article: Article object (None)>>
+
+>>> article.save()
+
+>>> Article.objects.all()
+<QuerySet [<Article: Article object (1)>]>
+
+>>> Article.objects.all()[0]
+<Article: Article object (1)>
+
+>>> Article.objects.all()[0].title
+'Title field'

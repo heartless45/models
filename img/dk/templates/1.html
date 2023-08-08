@@ -1,0 +1,16 @@
+<html>
+    {% load static %}
+    <head>
+        <title>Darshan k patel</title>
+        <link rel="stylesheet" href="{%static 'css/style.css' %}">
+    </head>
+    <body>
+    {%for article in articles %}
+        <h1>Hello</h1>
+        <a href="ime/">DK</a>
+        <p>{{article.title}}</p>
+        <p>{{article.body}}</p>
+        <p>{{article.date}}</p>
+    {% endfor %}
+    </body>
+</html>
